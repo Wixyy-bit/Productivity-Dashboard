@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+
+        <nav>
+            <h1>Productivity Dashboard</h1>
+        </nav>
+
+        <div class="weather">
+            <div class="left">
+                <p></p>
+                <h1>Friday, <span id="thetime"></span>PM</h1>
+                <h3>Ahmedabad</h3>
+            </div>
+            <div class="right">
+                <h1></h1>
+                <p>Wind Direction : <span id="wd"></span> </p>
+                <p>Wind Speed : <span id="ws"></span> </p>
+
+            </div>
+        </div>
+
+        <div class="app-list">
+            <div class="app" id="0">
+                <img src="ChatGPT Image Dec 19, 2025, 11_25_45 AM.png" alt="">
+            </div>
+            <div class="app" id="1">
+                <img src="daily.png" alt="">
+            </div>
+            <div class="app" id="2">
+                <img id="motivatio-img" src="motiv.png" alt="">
+                <p>Motivational quote</p>
+            </div>
+            <div class="app" id="3">
+                <img src="pomo.png" alt="">
+                <p>Pomodoro Timer</p>
+            </div>
+        </div>
+
+        <div class="Allfullpages">
+            <div class="todoPage fullPage"> 
+                <h1>Your Task List</h1>
+                <div class="todoactions">
+                    <div class="left">
+                        <form id="todoform">
+                            <input type="text" placeholder="Task Title" name="" id="">
+                            <textarea class="todoarea" placeholder="Task Discription"></textarea>
+                            <button>Add Task</button>
+                        </form>
+                        <div class="count">
+                            <h2>Active Tasks</h2>
+                            <h2 id="count"></h2>
+                        </div>
+                    </div>
+                    <div class="right">
+                    </div>
+                </div>
+                <button class="close" id="0">close</button>
+            </div>
+            <div class="dailypage fullPage">
+                <h1>Plan Your Productive Day</h1>
+                <button class="close" id="1">close</button>
+                <div class="planner">
+                </div>
+            </div>
+            <div class="motivation fullPage">
+                <h1>Be Motivated</h1>
+                <button class="close" id="2">close</button>
+                <div class="motive-fullpage">
+                    <div class="motivation-border">
+                        <div class="motivation-main">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="pomo fullPage">
+                <h1>Pomodoro Timer</h1>
+                <button class="close" id="3">close</button>
+                <div class="timer-full">
+                    <div class="update">
+                        <h3>Work session</h3>
+                    </div>
+                    <div class="top">
+                        <h2></h2>
+                    </div>
+                    <div class="bottom">
+                        <button id="start-timer">Start</button>
+                        <button id="pause-timer">Pause</button>
+                        <button id="reset-timer">Reset</button>
+                    </div>         
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
