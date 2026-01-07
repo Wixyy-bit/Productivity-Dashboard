@@ -344,3 +344,130 @@ h2{
     font-weight: 600;
     color: var(--bg);
 }
+
+@media (max-width: 800px) {
+
+  /* Global spacing tweaks */
+  nav {
+    margin: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  main {
+    gap: 1.5rem;
+  }
+
+  /* Weather card */
+  .weather {
+    height: auto;
+    flex-direction: column;
+    gap: 1rem;
+    background-position: center;
+  }
+
+  .weather .left h1 {
+    font-size: 2.2rem;
+  }
+
+  .weather .right {
+    text-align: right;
+    margin-top: -2rem;
+  }
+
+  /* App grid */
+  .app-list {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .app {
+    width: 160px;
+    height: 220px;
+  }
+
+  .app p {
+    font-size: 1.1rem;
+  }
+
+  /* Full page layouts */
+  .fullPage {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  /* TODO PAGE */
+  .todoactions {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .todoactions .left,
+  .todoactions .right {
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .todoactions .left form {
+    height: auto;
+  }
+
+  /* Daily planner */
+  .dailypage .planner {
+    margin-top: 2rem;
+    padding: 0.8rem;
+  }
+
+  .dailypage .planner .plan {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .dailypage .planner .h3 {
+    width: auto;
+    font-size: 0.9rem;
+  }
+
+  .dailypage .planner .plan input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* Motivation page */
+  .motivation-border {
+    max-width: 90%;
+    border-radius: 30px;
+  }
+
+  .motivation-main {
+    padding: 1.5rem;
+  }
+
+  .motivation-main h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Timer */
+  .timer-full h2 {
+    font-size: 4rem;
+  }
+
+  .timer-full button {
+    font-size: 1rem;
+  }
+
+  .timer-full .update {
+    padding: 0.8rem 1.2rem;
+  }
+
+  /* Close button */
+  .close {
+    top: 3%;
+    right: 3%;
+    font-size: 0.9rem;
+  }
+}
