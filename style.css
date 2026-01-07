@@ -471,3 +471,165 @@ h2{
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 408px) {
+
+  /* Global text scaling */
+  * {
+    letter-spacing: 0.4px;
+  }
+
+  main {
+    gap: 1rem;
+  }
+
+  /* NAV */
+  nav {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 0.5rem;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  nav button {
+    width: 100%;
+  }
+
+  /* WEATHER CARD */
+  .weather {
+    padding: 0.8rem;
+    border-radius: 8px;
+    height: 25%;
+  }
+
+  .weather .left h1 {
+    font-size: 1.8rem;
+  }
+
+  .weather .left h3 {
+    font-size: 1rem;
+  }
+
+  .weather .right h1 {
+    font-size: 1rem;
+  }
+
+  /* APP GRID → single column */
+  .app-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .app {
+    width: 40%;
+    max-width: 280px;
+    height: 130px;
+  }
+
+  .app p {
+    font-size: 1.1rem;
+    left: 5%;
+    top: 6%;
+  }
+
+  /* FULL PAGE */
+  .fullPage {
+    padding: 1rem;
+    /* min-height: 100%; */
+
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  /* TODO PAGE */
+  .todoPage{
+    height: fit-content;
+  }
+  .todoactions {
+    gap: 1rem;
+  }
+
+  .todoactions .left form {
+    padding: 1rem;
+  }
+
+  .todoactions .left form input,
+  .todoactions .left form textarea,
+  .todoactions .left form button {
+    font-size: 0.95rem;
+  }
+
+  .todoactions .right {
+    padding: 1rem;
+  }
+
+  .todoactions .right .task {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .todoactions .right .task button {
+    align-self: flex-end;
+  }
+
+  /* DAILY PLANNER */
+  .dailypage .planner {
+    padding: 0.6rem;
+  }
+
+  .dailypage .planner .time-border {
+    padding: 1rem 0;
+    border-right: none;
+  }
+
+  .dailypage .planner .plan {
+    padding-bottom: 0.8rem;
+  }
+
+  /* MOTIVATION */
+  .motivation-border {
+    max-width: 100%;
+    padding: 8px;
+    border-radius: 24px;
+  }
+
+  .motivation-main {
+    padding: 1.2rem;
+    gap: 1.2rem;
+  }
+
+  .motivation-main h2 {
+    font-size: 1.5rem;
+  }
+
+  .motivation-main p {
+    font-size: 1rem;
+  }
+
+  /* TIMER */
+  .timer-full h2 {
+    font-size: 3.2rem;
+  }
+
+  .timer-full button {
+    width: 100%;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .timer-full .update {
+    padding: 0.7rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* CLOSE BUTTON */
+  .close {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
